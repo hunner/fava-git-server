@@ -42,4 +42,4 @@ sleep 1
 
 export PYTHONPATH=.
 set -x
-fava --host=0.0.0.0 --port="$FAVA_PORT" "$@" $BEAN_FILE
+fava --prefix "/finances" --host=0.0.0.0 --port="$FAVA_PORT" "$@" $BEAN_FILE

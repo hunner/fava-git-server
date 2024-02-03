@@ -1,4 +1,4 @@
-FROM python:3.9.1-alpine3.12
+FROM python:alpine
 
 # Install any additional packages needed for importers
 ARG APK_PKGS
@@ -13,9 +13,9 @@ RUN apk add --no-cache \
     openssh-client \
     $APK_PKGS \
   && pip install \
-    beancount==2.3.4 \
-    fava==1.19 \
-    flask==1.1.4 \
+    beancount==2.3.6 \
+    fava==1.27.1 \
+    flask==2.3.3 \
     $PIP_PKGS \
   && apk del \
     build-base \
