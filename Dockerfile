@@ -11,6 +11,8 @@ RUN apk add --no-cache \
     libxml2-dev \
     libxslt-dev \
     openssh-client \
+    bison \
+    flex \
     $APK_PKGS \
   && pip install \
     beancount==3.1.0 \
